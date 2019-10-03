@@ -5,6 +5,14 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: "gatsby-source-liferay",
+      options: {
+        host: "localhost:8080",
+        siteId: "20123",
+        authKey: "dGVzdEBsaWZlcmF5LmNvbTp0ZXN0"
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
